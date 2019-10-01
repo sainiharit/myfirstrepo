@@ -28,6 +28,30 @@
             errorMessage: 'The requested content cannot be loaded. Please try again later.'
         };
 
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        result_button=findViewById(R.id.result_button);
+        number1=findViewById(R.id.number1);
+        number2=findViewById(R.id.number2);
+        result_shown=findViewById(R.id.result_shown);
+        result_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               num1=Integer.parseInt(number1.getText().toString());
+                 num2=Integer.parseInt(number2.getText().toString());
+                result=num1+num2;
+                result_shown.setText(Integer.toString(result));
+            }
+        });
+
+    }
+	
+	
+	
     function NivoLightbox(element, options){
         this.el = element;
         this.$el = $(this.el);
