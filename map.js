@@ -18,6 +18,33 @@ jQuery(document).ready(function($) {
 
 	//we define here the style of the map
 	var style= [ 
+		{	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,
+		$brightness= 5;
+
+	//we define here the style of the map
+	var style= [ 
+		{	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,
+		$brightness= 5;
+
+	//we define here the style of the map
+	var style= [ 
+		{	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,
+		$brightness= 5;
+
+	//we define here the style of the map
+	var style= [ 
 		{
 			//set saturation for the labels on the map
 			elementType: "labels",
