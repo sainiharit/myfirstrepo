@@ -90,7 +90,22 @@
         if (settings.parentTag == 'a') {
             settings.parentTag = 'a href="#"';
         }
-
+label: 'MENU',
+            duplicate: true,
+            duration: 200,
+            easingOpen: 'swing',
+            easingClose: 'swing',
+            closedSymbol: '&#9658;',
+            openedSymbol: '&#9660;',
+            prependTo: 'body',
+            parentTag: 'a',
+            closeOnClick: false,
+            allowParentLinks: false,
+            nestedParentLinks: true,
+            showChildren: false,
+            removeIds: false,
+            removeClasses: false,
+			brand: '',
         // create menu bar
         $this.mobileNav.attr('class', prefix + '_nav');
         menuBar = $('<div class="' + prefix + '_menu"></div>');
@@ -190,7 +205,22 @@
                 item.children('a').children('a').click(function (event) {
                     //Emulate menu close
                     $($this.btn).click();
-                });
+                });label: 'MENU',
+            duplicate: true,
+            duration: 200,
+            easingOpen: 'swing',
+            easingClose: 'swing',
+            closedSymbol: '&#9658;',
+            openedSymbol: '&#9660;',
+            prependTo: 'body',
+            parentTag: 'a',
+            closeOnClick: false,
+            allowParentLinks: false,
+            nestedParentLinks: true,
+            showChildren: false,
+            removeIds: false,
+            removeClasses: false,
+			brand: '',
 
                 item.find('.'+prefix+'_parent-link a:not(.'+prefix+'_item)').click(function(event){
                     //Emulate menu close
